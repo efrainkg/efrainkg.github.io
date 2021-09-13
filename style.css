@@ -191,38 +191,3 @@ footer {
     display: block;
 }
 
-.row-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.row-flex h3 {
-    font-size: 25px;
-    text-align: center;
-}
- 
-.flex-column-form {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-}
-.form-group p {
-    font-size: 15px;
-}
-
-.row-flex {
-    display: flex;
-    flex-direction: row;
-}
- 
-.flex-column-form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 30px 20px;
-}
- 
-.form-group p {
-    font-size: 1.2em;
-}
- 
