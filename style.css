@@ -180,9 +180,15 @@ p {
 }
 
 footer {
+  
    background-color:black;
    color: white;
    font-family: sans-serif;
+}
+.footer-container {
+    float: left;
+    clear: left;
+    clear: top;
 }
 
 .footer-container::after {
@@ -191,3 +197,7 @@ footer {
     display: block;
 }
 
+/* .social-icons {
+    float: right;
+    display: inline;
+} */
