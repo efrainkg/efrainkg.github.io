@@ -8,170 +8,7 @@
     <script src="https://kit.fontawesome.com/a1d616d93a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style.css">
     <title>ABOUT</title>
-    <style>
-        .title {
-            font-family: sans-serif;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-
-        .form-group {
-            padding: 10px;
-        }
-
-        .portrait {
-            float: left;
-            width: 500px;
-            height: 534px;
-            padding-right: 10px;
-        }
-
-        .aboutme {
-            background-color: white;
-            text-indent: 25px;
-            font-size: 1vw;
-            font-family: sans-serif;
-            box-sizing: border-box;
-            box-shadow: 7px 7px 0px 3px yellow;
-            border-right: 4px solid black;
-            border-bottom: 4px solid black;
-            width: 100%;
-        }
-
-        .aboutme-container {
-            font-size: larger;
-            width: 60%;
-            text-align: left;
-            padding-left: 18%;
-        }
-
-        .aboutme-text {
-            font-weight: 800;
-            padding-right: 10px;
-        }
-
-        .aboutme-container::after {
-            content: " ";
-            clear: both;
-            display: block;
-        }
-
-        body,
-        html {
-            height: 100%;
-        }
-
-
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/d4/a9/4f/d4a94fc1adad71c29065376eb6ce85a6.jpg");
-            height: 80%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-
-
-        .hero-text {
-            font-family: sans-serif;
-            position: absolute;
-            font-size: 25;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: black;
-            background-color: white;
-            text-indent: 25px;
-            box-sizing: border-box;
-            box-shadow: 7px 7px 0px 3px teal;
-            border-right: 4px solid black;
-            border-bottom: 4px solid black;
-
-        }
-
-        footer {
-
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: black;
-            height: auto;
-            width: 100vw;
-            font-family: sans-serif;
-            padding-top: 40px;
-            color: white;
-        }
-
-        .footer-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .footer-content h3 {
-            font-size: 1.8rem;
-            font-weight: 400;
-            text-transform: capitalize;
-            line-height: 3rem;
-        }
-
-        .footer-content p {
-            max-width: 500%;
-            margin: 10px auto;
-            line-height: 28px;
-            font-size: 14px;
-        }
-
-        .socials {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 1rem 0 3rem 0;
-        }
-
-        .socials li {
-            margin: 0 10px;
-        }
-
-        .socials a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .socials a i {
-            font-size: 1.1rem;
-            transition: color .4s ease;
-        }
-
-        .socials a:hover i {
-            color: teal;
-
-        }
-
-        .footer-bottom {
-            background: black;
-            width: 100vw;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .footer-bottom p {
-            font-size: 14px;
-            word-spacing: 2px;
-            text-transform: capitalize;
-        }
-
-        .footer-bottom span {
-            text-transform: uppercase;
-            opacity: .4;
-            font-weight: 200;
-        }
-    </style>
-
+ 
 </head>
 
 <body>
@@ -180,7 +17,9 @@
             <h1 class="logo"><a href="index.html">DEFINITIVE<br>WMMA</a></h1>
             <ul class="link_container">
                 <li class="list_style"><a href="/index.html">HOME</a></li>
+                <li class="list_style">|</li>
                 <li class="list_style"><a href="/about.html">ABOUT</a></li>
+                <li class="list_style">|</li>
                 <li class="list_style"><a href="/contact.html">CONTACT</a></li>
             </ul>
         </div>
@@ -194,11 +33,13 @@
         <div class="banner">
             <h1>
                 <ul class="banner_container">
+                    <li class="banner_style">|</li>
                     <li class="banner_style"><a href="https://www.tapology.com/news" target="_blank">NEWS</a></li>
-                    <li class="banner_style"><a href="https://www.tapology.com/rankings/groups/current"
-                            target="_blank">RANKINGS</a></li>
-                    <li class="banner_style"><a href="https://www.tapology.com/fightcenter" target="_blank">EVENTS</a>
-                    </li>
+                    <li class="banner_style">|</li>
+                    <li class="banner_style"><a href="https://www.tapology.com/rankings/groups/current" target="_blank">RANKINGS</a></li>
+                    <li class="banner_style">|</li>
+                    <li class="banner_style"><a href="https://www.tapology.com/fightcenter" target="_blank">EVENTS</a></li>
+                    <li class="banner_style">|</li>
                 </ul>
             </h1>
         </div>
@@ -235,10 +76,9 @@
 
     <footer>
         <div class="footer-content">
-            <h3>
-                DEFINITIVE <br />
-                WMMA
-            </h3>
+            <h1>
+                <a href="index.html">DEFINITIVE WMMA</a>
+            </h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo,
                 consectetur quia magni corrupti soluta ipsam illum! Exercitationem
