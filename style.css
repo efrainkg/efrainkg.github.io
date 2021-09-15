@@ -77,9 +77,8 @@
 }
 
 a:hover {
-    background-color: white;
-    color: white;
-    opacity: 0.8;
+    color: teal;
+    opacity: 0.6;
 }
 
 a:visited{
@@ -141,6 +140,7 @@ a {
 
 iframe {
     display: block;
+    width: 100%;
 }
 
 #article1 {
@@ -163,7 +163,7 @@ footer {
     right: 0;
     background: black;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: sans-serif;
     padding-top: 40px;
     color: white;
@@ -197,10 +197,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    padding-left: 0;
 }
 
 .socials li {
-    margin: 0 10px;
+    margin: 0 50px;
 }
 
 .socials a {
@@ -209,8 +210,7 @@ footer {
 }
 
 .socials a i {
-    font-size: 1.1rem;
-    transition: color .4s ease;
+    font-size: 3rem;
 }
 
 .socials a:hover i {
@@ -219,8 +219,9 @@ footer {
 }
 
 .footer-bottom {
-    background: black;
-    width: 100vw;
+    background: darkslategrey;
+    opacity: .3;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
