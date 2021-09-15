@@ -405,14 +405,14 @@ html {
     color: white;
   }
 
-form {
+  form {
     border: 3px double #999;
     margin-bottom: 50px;
     padding: 20px;
-    max-width: 1200px;
     width: 100%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px 3px teal;
   }
-
   textarea {
     padding: 10px;
     border-radius: 5px;
@@ -434,4 +434,29 @@ form {
   body,
   html {
     height: 100%;
+  }
+
+  .button {
+    text-align: center;
+    color: black;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  form {
+    border: 3px double #999;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px 3px teal;
+  }
+
+  .form-group {
+    padding: 10px;
   }
