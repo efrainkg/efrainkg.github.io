@@ -1,8 +1,23 @@
+body {
+    background-color: black;
+}
 .navbar {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://ftw.usatoday.com/wp-content/uploads/sites/90/2019/10/usatsi_10991888.jpg?w=1000&h=600&crop=1");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/images/water.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 250px;
     background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: scale(1);
+    transition: .6s;
+}
+
+.navbar a {
+    display: inline-flex;
+    transform: scale(1);
+    transition: .6s;
 }
 
 .navbar::after {
@@ -11,50 +26,102 @@
     display: block;
 }
 
+.nunes {
+    height: 250px;
+    transform: scale(1);
+    transition: .6s;
+}
+
+
+.shev {
+    height: 250px;
+    margin-left: -30px;
+    transform: scale(1);
+    transition: .6s;
+}
+
+.rose {
+    height: 250px;
+    margin-left: -250px;
+    transform: scale(1);
+    transition: .6s;
+}
+
 .list_style {
     color: white;
     display: inline;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding-right: 20px;
+    align-items: center;
+    padding-right: 10px;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: x-large;
+    display: flex;
+    transform: scale(1);
+    transition: .6s;
+    padding-right: 20px;
 }
 
 .link_container {
     float: right;
-    padding-top: 25px;
+    padding-top: 15px;
+    display: flex;
+    width: 400px;
+    transform: scale(1);
+    transition: .6s;
 }
 
-.banner_style {
-    display: inline;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 50px;
-    position: sticky;
+.zoom-in:hover {
+    transform: scale(1.2);
+    transition: .6s;
 }
-.logo {
-    
+
+
+.banner_style {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: inline-flex;
+    transition: .6s;
+    transform: scale(1);
+    text-decoration: none;
     color: white;
-    font-size: 75px;
-    margin-left: 50px;
+}
+
+.banner-zoom-in:hover {
+    transform: scale(1.2);    
+    transition: .6s;
+}
+
+.logo {
+    padding-left: 50px;
     float: left;
     font-family: sans-serif;
-    display: inline;
+    display: flex;
+    transition: .6s;
+    transform: scale(1);
+}
+
+.ufc-logo {
+    width: 50%;
+    padding-top: 40px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .banner {
-    box-sizing: border-box;
-    border: 7px solid black;
-    width: 100%;
-    text-align: center;
+    width: 98%;
+    display: inline-block;
     font-family: sans-serif;  
-    color:black;
-    background-color: teal;
-    height: fit-content;
-    position: sticky;
+    background-color: black;
+    width: 100%;
+    padding-left: 23.75%;
+    position: fixed;
+    top: 250px;
+    width: 100%;
 }
+
+
 
 .banner::after {
     content:" ";
@@ -65,9 +132,50 @@
 
 .joanna {
     float: left;
-    width: 25%; 
+    width: 40%; 
     background-color:black;
     margin-right: 15px;
+    margin-top: 0;
+    
+    opacity: 1;
+    
+    transition: .6s;
+}
+
+/*.image-container {
+    float: left;
+    width: 40%; 
+    background-color: black;
+    margin-right: 15px;
+    margin-top: 0;
+    opacity: 1;
+    transition: .6s;
+}
+
+.image-container a {
+    transform: scale(1);
+    transition: .6s;
+    scroll-behavior: smooth;
+}
+
+.gdr {
+    float: left;
+    display: inline-flex;
+    margin-left: -20px;
+    
+}
+
+.aldana {
+    float: left;
+    display: flex;
+    ;
+    
+}*/
+
+.image-container::after {
+    content: " ";
+    clear: both;
+    display: block;
 }
 
 .joanna::after {
@@ -76,9 +184,14 @@
     display: block;
 }
 
+/*.joanna:hover {
+    transform: scale(1.02);
+    transition: .6s;
+}*/
+
 a:hover {
     color: teal;
-    opacity: 0.6;
+    transition: .6s;
 }
 
 a:visited{
@@ -91,33 +204,51 @@ a {
 
 
 .article-container {
-    width: 70%;
+    width: 100%;
+    top: 350px;
+}
+
+.article-container::after {
+    content: " ";
+    clear: both;
+    display: block;
 }
 
 .article {
+    background-color: white;
+    opacity: 1;
     float: left;
     font-family: sans-serif;
     box-sizing: border-box;
-    box-shadow: 7px 7px 0px 3px teal;
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
-    width: 100%;
+    box-shadow: 7px 7px 0px 1px teal;
+    /*border-right: 4px solid black;
+    border-bottom: 4px solid black;*/
+    width: 45%;
     padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 28%;
+    display: inline-flexbox;
+}
+
+.article-text h2 {
+    text-align: left;
 }
 
 .article-text p {
     color: black;
     font-size: 1.2em;
+    text-align: left;
+    position: flex;
+    flex-wrap: wrap;
 }
 
 .article-container::after {
     content:" ";
     clear: both;
     display: block;
-    width: 70%;
 }
 
-.aside-container {
+/*.aside-container {
     float: right;
     width: 29%;
 }
@@ -136,28 +267,28 @@ a {
     content:" ";
     clear: both;
     display: block;
-}
+}*/
 
 iframe {
     display: block;
     width: 100%;
 }
-
+/*
 #article1 {
-    height: 279.76px;
+    height: 200px;
 }
 #article2 {
-    height: 279.76px;
+    height: 200px;
 }
 #article3 {
-    height: 279.76px;
+    height: 200px;
 }
 #article4 {
-    height: 279.76px;
+    height: 200px;
 }
-
+*/
 footer {
-
+    display: inline-flexbox;
     bottom: 0;
     left: 0;
     right: 0;
@@ -167,6 +298,7 @@ footer {
     font-family: sans-serif;
     padding-top: 40px;
     color: white;
+    float: left;
 }
 
 .footer-content {
@@ -175,6 +307,18 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.footer-content a {
+    display: flex;
+    transform: scale(1);
+    transition: .6s;
+}
+
+.footer-content a:hover {
+    color: teal;
+    transform: scale(1.2);
+    transition: .6s;
 }
 
 .footer-content h3 {
@@ -193,28 +337,36 @@ footer {
 
 .socials {
     list-style: none;
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
     padding-left: 0;
+    transform: scale(1);
+    transition: .6s;
 }
 
 .socials li {
     margin: 0 50px;
+
 }
 
 .socials a {
     text-decoration: none;
     color: white;
+
 }
 
 .socials a i {
     font-size: 3rem;
+    transform: scale(1);
+    transition: .6s;
 }
 
 .socials a:hover i {
     color: teal;
+    transform: scale(1.4);
+    transition: .6s;
 
 }
 
@@ -263,14 +415,15 @@ footer {
     font-family: sans-serif;
     box-sizing: border-box;
     box-shadow: 7px 7px 0px 3px yellow;
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
     width: 100%;
 }
 
 .aboutme-container {
     font-size: larger;
-    width: 60%;
+    width: 50%;
+    height: 50%;
     text-align: left;
     padding-left: 18%;
 }
@@ -292,12 +445,11 @@ html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/d4/a9/4f/d4a94fc1adad71c29065376eb6ce85a6.jpg");
-    height: 80%;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url("https://i.pinimg.com/originals/d4/a9/4f/d4a94fc1adad71c29065376eb6ce85a6.jpg");
+    height: 100%;
+    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 
@@ -318,24 +470,25 @@ html {
 
 }
 
+.hero-about-vid {
+    font-family: sans-serif;
+    width: 35%;
+    height: 1svmax;
+
+    margin-left: 32.5%;
+    color: black;
+}
+
 .hero-form-text {
     font-family: sans-serif;
     text-align: center;
-    position: absolute;
+    width: 33%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 33%;
     color: white;
   }
 
-  form {
-    border: 3px double #999;
-    margin-bottom: 50px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: 7px 7px 0px 3px teal;
-  }
+ 
   textarea {
     padding: 10px;
     border-radius: 5px;
@@ -383,3 +536,9 @@ html {
   .form-group {
     padding: 10px;
   }
+
+.banner-nav-spacer {
+    display: block;
+    width: 100%;
+    height: 348.49px;
+}
